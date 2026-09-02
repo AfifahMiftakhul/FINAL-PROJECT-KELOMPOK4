@@ -47,11 +47,11 @@ Selain pembuatan deskripsi otomatis, sistem ini dilengkapi dengan fitur pengelol
 git clone [https://github.com/AfifahMiftakhul/FINAL-PROJECT-KELOMPOK4.git](https://github.com/AfifahMiftakhul/FINAL-PROJECT-KELOMPOK4.git)
 cd FINAL-PROJECT-KELOMPOK4
 
-<img width="1365" height="684" alt="dashboard" src="https://github.com/user-attachments/assets/38c4b3f2-3770-410d-a91f-a39eb878529f" />Dashboard Penyelenggara: Tempat penyelenggara yang telah login dapat menambah event baru dengan mengisi nama, kategori, tanggal, waktu, lokasi, dan informasi pendaftaran.
+'<img width="1365" height="684" alt="dashboard" src="https://github.com/user-attachments/assets/38c4b3f2-3770-410d-a91f-a39eb878529f" />' Dashboard Penyelenggara: Tempat penyelenggara yang telah login dapat menambah event baru dengan mengisi nama, kategori, tanggal, waktu, lokasi, dan informasi pendaftaran.
 
-<img width="1365" height="676" alt="Daftar event" src="https://github.com/user-attachments/assets/db312231-a6cb-4863-a0b7-db2389445cd9" /> Fitur AI Generate: Pengguna dapat memilih gaya bahasa (seperti Formal atau Santai) lalu menekan tombol Generate Deskripsi AI agar sistem menyusun deskripsi acara secara otomatis.
+'<img width="1365" height="676" alt="Daftar event" src="https://github.com/user-attachments/assets/db312231-a6cb-4863-a0b7-db2389445cd9" />' Fitur AI Generate: Pengguna dapat memilih gaya bahasa (seperti Formal atau Santai) lalu menekan tombol Generate Deskripsi AI agar sistem menyusun deskripsi acara secara otomatis.
 
-<img width="1365" height="685" alt="Diskripsi" src="https://github.com/user-attachments/assets/2c8b8c72-f0df-4d00-b44e-f9cfa767a934" /> Pengelolaan Event (CRUD): Penyelenggara dapat melihat daftar event yang telah dibuat, serta melakukan perubahan atau menghapusnya melalui tombol Edit dan Hapus.
+'<img width="1365" height="685" alt="Diskripsi" src="https://github.com/user-attachments/assets/2c8b8c72-f0df-4d00-b44e-f9cfa767a934" />' Pengelolaan Event (CRUD): Penyelenggara dapat melihat daftar event yang telah dibuat, serta melakukan perubahan atau menghapusnya melalui tombol Edit dan Hapus.
 
 <img width="1365" height="684" alt="Halaman utama" src="https://github.com/user-attachments/assets/0c52a697-abed-4b07-bc48-dfcbe335c97b" /> Halaman Publik: Masyarakat umum dapat mengunjungi halaman utama website untuk melihat daftar event yang tersedia secara lengkap beserta detail waktunya tanpa harus melakukan login.
 
