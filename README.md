@@ -69,6 +69,7 @@ Konfirmasi Hapus Event: Menampilkan kotak dialog peringatan (pop-up) bertuliskan
 
 <img width="800" height="447" alt="image" src="https://github.com/user-attachments/assets/9bed0cc9-cc1b-4aa8-b69e-086f2aa80b86" /> : Notifikasi Keberhasilan: Memunculkan jendela pemberitahuan pop-up "Event berhasil diperbarui!" dengan tombol Close setelah proses penyimpanan perubahan data selesai dilakukan.
 
+<img width="1034" height="567" alt="image" src="https://github.com/user-attachments/assets/f69ee742-f6c5-4010-8e97-0ae26beb1891" />
 
 
 
