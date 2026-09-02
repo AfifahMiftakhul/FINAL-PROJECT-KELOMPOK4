@@ -62,7 +62,8 @@ Halaman Register Akun Baru: Memungkinkan penyelenggara baru untuk mendaftarkan a
 
 <img width="1365" height="687" alt="data pendaftram event" src="https://github.com/user-attachments/assets/b0968289-c5ce-4e6e-865c-dd2a0c6c340e" /> Daftar Event Saya: Menampilkan daftar card event yang berhasil dibuat oleh penyelenggara yang sedang login, dilengkapi tombol Edit dan Hapus untuk mengelola data acara secara mandiri.
 
-<img width="1280" height="584" alt="image" src="https://github.com/user-attachments/assets/1637b286-ca8c-4a19-8de7-337413b11609" /> : Konfirmasi Hapus Event: Menampilkan kotak dialog peringatan (pop-up) bertuliskan "Yakin ingin menghapus event ini?" dengan pilihan tombol Cancel atau OK untuk memastikan tindakan penghapusan data.
+<img width="1280" height="584" alt="image" src="https://github.com/user-attachments/assets/1637b286-ca8c-4a19-8de7-337413b11609" />
+Konfirmasi Hapus Event: Menampilkan kotak dialog peringatan (pop-up) bertuliskan "Yakin ingin menghapus event ini?" dengan pilihan tombol Cancel atau OK untuk memastikan tindakan penghapusan data.
 
 <img width="1280" height="680" alt="image" src="https://github.com/user-attachments/assets/caa5191b-cf34-4540-a16d-a23e684067ff" /> : Form Edit Event: Menyediakan antarmuka khusus untuk mengubah rincian acara yang sudah ada, lengkap dengan tombol Batal Edit serta kolom deskripsi yang dapat disesuaikan kembali.
 
