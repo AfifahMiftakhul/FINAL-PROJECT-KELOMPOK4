@@ -1,51 +1,51 @@
-# Fullstack Template
+# 🤖 AI Event Description Generator
 
-Starter template sederhana: `backend` (Express) + `frontend` (Vite + React +
-Tailwind). Backend cuma punya 1 endpoint (`/health`) sebagai contoh, frontend
-nampilin status koneksi ke backend itu di halaman utama.
+> **Capstone Project - Mata Kuliah Pengembangan Aplikasi Web (PAW)**  
+> **Kelompok 4**
 
-## Struktur
-```
-fullstack-template/
-├── backend/     # Express API (app.js, config/, routes/, controllers/, utils/) - lihat backend/README.md
-└── frontend/    # Vite + React + Tailwind - lihat frontend/README.md
-```
+---
 
-Tiap folder (termasuk sub-folder di `frontend/src/`) punya README sendiri
-yang jelasin isi & fungsinya masing-masing.
+## 📌 Tentang Proyek
+**AI Event Description Generator** adalah aplikasi web yang dirancang untuk membantu panitia seminar, workshop, maupun organisasi mahasiswa dalam membuat deskripsi acara secara otomatis menggunakan **Gemini AI**. Aplikasi ini menyediakan kustomisasi gaya bahasa (**Formal** atau **Santai**) agar deskripsi yang dihasilkan sesuai dengan karakteristik acara[cite: 1].
 
-## Cara jalanin semuanya
+Selain pembuatan deskripsi otomatis, sistem ini dilengkapi dengan fitur pengelolaan event berbasis kepemilikan (*single-role user management*) dan halaman publik yang dapat diakses oleh masyarakat umum tanpa perlu login[cite: 1].
 
-Butuh 2 terminal terpisah (backend & frontend jalan bareng):
+---
 
-**Terminal 1 - Backend:**
+## 👥 Anggota Kelompok 4
+| Nama | NIM | Fokus Tugas |
+| :--- | :--- | :--- |
+| **Afifah Miftakhul** | `20240140072` | Login & Register (Autentikasi JWT)[cite: 1] |
+| **Wulandhika Kurnaliawati** | `20240140064` | CRUD Event Management[cite: 1] |
+| **Chintya Nuryaman** | `20240140195` | Integrasi Generate Deskripsi dengan Gemini AI[cite: 1] |
+| **Nur Azizah Ulinnuha** | `20240140252` | Pilihan Gaya Bahasa & Penyempurnaan Prompt AI[cite: 1] |
+
+---
+
+## 🛠️ Tech Stack
+* **Frontend:** Vite + React + Tailwind CSS[cite: 1]
+* **Backend:** Node.js + Express.js (REST API, MVC structure)[cite: 1]
+* **Database & Auth:** Supabase PostgreSQL, JWT (JSON Web Token), bcrypt[cite: 1]
+* **AI Engine:** Gemini AI API[cite: 1]
+* **Deployment:** Vercel (Frontend) / Railway (Backend)[cite: 1]
+
+---
+
+## ✨ Fitur Utama
+1. **Autentikasi Pengguna:** Sistem *Register* dan *Login* aman menggunakan enkripsi *bcrypt* dan token *JWT*[cite: 1].
+2. **Manajemen Event (CRUD):** Penyelenggara dapat menambah, melihat, mengedit, dan menghapus event miliknya sendiri (dengan proteksi *user_id* di backend)[cite: 1].
+3. **AI Description Generator:** Pembuatan deskripsi acara otomatis menggunakan Gemini AI berdasarkan detail acara yang dimasukkan[cite: 1].
+4. **Pilihan Gaya Bahasa:** Kustomisasi prompt untuk menghasilkan gaya bahasa **Formal** (baku dan resmi) atau **Santai** (akrab dan ringan)[cite: 1].
+5. **Halaman Publik:** Masyarakat umum dapat melihat daftar event aktif tanpa harus memiliki akun atau melakukan login[cite: 1].
+
+---
+
+## 🚀 Panduan Instalasi & Menjalankan Proyek
+
+### 1. Clone Repository
 ```bash
-cd backend
-cp .env.example .env
-npm install
-npm run dev
-```
-Jalan di `http://localhost:3000`
-
-**Terminal 2 - Frontend:**
-```bash
-cd frontend
-cp .env.example .env
-npm install
-npm run dev
-```
-Jalan di `http://localhost:5173`
-
-Buka `http://localhost:5173` di browser - kalo backend-nya juga jalan,
-halaman utama bakal nunjukin badge hijau "Backend Aktif" beserta respons
-JSON dari `/health`.
-
-## Cara pake template ini buat project baru
-
-1. Backend: tambah model/route/controller baru ngikutin pola `health.*`
-   yang udah ada (`routes/<nama>.routes.js` + `controllers/<nama>.controller.js`)
-2. Frontend: tambah halaman baru di `pages/`, daftarin di `routes/index.jsx`,
-   pisahin logic data-nya ke `hooks/`, potongan UI reusable ke `components/`
+git clone [https://github.com/AfifahMiftakhul/FINAL-PROJECT-KELOMPOK4.git](https://github.com/AfifahMiftakhul/FINAL-PROJECT-KELOMPOK4.git)
+cd FINAL-PROJECT-KELOMPOK4
 
 <img width="1365" height="684" alt="dashboard" src="https://github.com/user-attachments/assets/38c4b3f2-3770-410d-a91f-a39eb878529f" />Dashboard Penyelenggara: Tempat penyelenggara yang telah login dapat menambah event baru dengan mengisi nama, kategori, tanggal, waktu, lokasi, dan informasi pendaftaran.
 
@@ -61,6 +61,13 @@ JSON dari `/health`.
 Halaman Register Akun Baru: Memungkinkan penyelenggara baru untuk mendaftarkan akun dengan memasukkan nama lengkap/organisasi, email, serta password.
 
 <img width="1365" height="687" alt="data pendaftram event" src="https://github.com/user-attachments/assets/b0968289-c5ce-4e6e-865c-dd2a0c6c340e" /> Daftar Event Saya: Menampilkan daftar card event yang berhasil dibuat oleh penyelenggara yang sedang login, dilengkapi tombol Edit dan Hapus untuk mengelola data acara secara mandiri.
+
+<img width="1280" height="584" alt="image" src="https://github.com/user-attachments/assets/1637b286-ca8c-4a19-8de7-337413b11609" /> : Konfirmasi Hapus Event: Menampilkan kotak dialog peringatan (pop-up) bertuliskan "Yakin ingin menghapus event ini?" dengan pilihan tombol Cancel atau OK untuk memastikan tindakan penghapusan data.
+
+<img width="1280" height="680" alt="image" src="https://github.com/user-attachments/assets/caa5191b-cf34-4540-a16d-a23e684067ff" /> : Form Edit Event: Menyediakan antarmuka khusus untuk mengubah rincian acara yang sudah ada, lengkap dengan tombol Batal Edit serta kolom deskripsi yang dapat disesuaikan kembali.
+
+<img width="800" height="447" alt="image" src="https://github.com/user-attachments/assets/9bed0cc9-cc1b-4aa8-b69e-086f2aa80b86" /> : Notifikasi Keberhasilan: Memunculkan jendela pemberitahuan pop-up "Event berhasil diperbarui!" dengan tombol Close setelah proses penyimpanan perubahan data selesai dilakukan.
+
 
 
 
