@@ -65,3 +65,133 @@ Konfirmasi Hapus Event: Menampilkan kotak dialog peringatan (pop-up) bertuliskan
 postman login
 <img width="1440" height="900" alt="Screenshot 2026-09-02 at 18 24 13" src="https://github.com/user-attachments/assets/d44ed498-2cdc-4a25-ba1a-5f35926e9a7f" />
 
+
+
+
+
+
+PRD
+# AI Event Description Generator
+
+AI Event Description Generator adalah aplikasi web yang membantu penyelenggara seminar, workshop, dan organisasi mahasiswa dalam membuat deskripsi event secara lebih cepat dengan memanfaatkan Gemini AI.
+
+Aplikasi menyediakan fitur Login & Register, pengelolaan event (CRUD), pembuatan deskripsi menggunakan Gemini AI, pilihan gaya bahasa Formal atau Santai, serta halaman publik untuk melihat event tanpa perlu login.
+
+## 🎯 Tujuan
+
+- Mempercepat proses pembuatan deskripsi event.
+- Memberikan pilihan gaya bahasa Formal atau Santai.
+- Menyediakan pengelolaan event melalui fitur CRUD.
+- Membatasi pengelolaan event berdasarkan kepemilikan user.
+- Menyediakan halaman publik untuk melihat event tanpa login.
+- Mengintegrasikan AI generatif melalui Gemini AI.
+
+## 👥 Target Pengguna
+
+### Penyelenggara
+
+Penyelenggara seminar, workshop, dan organisasi mahasiswa yang dapat:
+
+- Register dan Login.
+- Membuat event.
+- Melihat event miliknya.
+- Mengedit event miliknya.
+- Menghapus event miliknya.
+- Menggunakan Gemini AI untuk membuat deskripsi event.
+
+### Pengunjung Umum
+
+Pengunjung yang dapat melihat daftar event yang tersedia tanpa perlu melakukan login.
+
+## ✨ Fitur Utama
+
+- Register
+- Login
+- Authentication menggunakan JWT
+- Password hashing menggunakan bcrypt
+- CRUD Event
+- Generate Deskripsi menggunakan Gemini AI
+- Pilihan gaya bahasa Formal atau Santai
+- Halaman Event Publik
+- Pembatasan akses berdasarkan kepemilikan event
+
+## 🛠️ Tech Stack
+
+| Layer | Teknologi |
+|---|---|
+| Frontend | Vite + React + Tailwind CSS |
+| Backend | Node.js + Express.js |
+| API | REST API |
+| Authentication | JWT |
+| Password Security | bcrypt |
+| Database | Supabase PostgreSQL |
+| AI Engine | Gemini AI API |
+| Frontend Deployment | Vercel |
+| Backend Deployment | Railway |
+
+Frontend dan backend dikembangkan dalam folder terpisah dan berkomunikasi menggunakan REST API.
+
+
+## 🔐 Security
+
+- Password disimpan dalam bentuk hash menggunakan bcrypt.
+- JWT digunakan untuk autentikasi pengguna.
+- Kepemilikan event divalidasi pada backend.
+- API key Gemini disimpan pada environment variable backend.
+- User hanya dapat mengelola event miliknya sendiri.
+
+## 👩‍💻 Struktur Tim
+
+| Anggota | Fokus |
+|---|---|
+| Afifah Miftakhul | Login & Register |
+| Wulandhika Kurnaliawati | CRUD Event |
+| Chintya Nuryaman | Generate Deskripsi dengan Gemini AI |
+| Nur Azizah Ulinnuha | Pilihan Gaya Bahasa & penyempurnaan prompt AI |
+
+## 📌 User Flow
+
+### Penyelenggara
+
+1. Register/Login.
+2. Masuk ke halaman pengelolaan event.
+3. Menambah event.
+4. Mengisi informasi event.
+5. Memilih gaya bahasa Formal atau Santai.
+6. Generate deskripsi menggunakan Gemini AI.
+7. Melihat hasil deskripsi.
+8. Mengedit atau generate ulang deskripsi.
+9. Menyimpan event.
+10. Event dapat muncul pada halaman publik.
+
+### Pengunjung Umum
+
+1. Membuka website.
+2. Melihat daftar event.
+3. Tidak perlu login.
+4. Tidak memiliki akses untuk mengubah atau menghapus event.
+
+## 📋 Scope
+
+### In-Scope
+
+- Login & Register
+- CRUD Event
+- Generate Deskripsi dengan Gemini AI
+- Pilihan Gaya Bahasa Formal/Santai
+- Halaman Event Publik
+- Informasi Pendaftaran
+
+### Out-of-Scope
+
+- Pendaftaran peserta event
+- Payment gateway
+- Aplikasi mobile native
+- Gaya bahasa selain Formal dan Santai
+- Fitur di luar pengelolaan event dan pembuatan deskripsi AI
+
+## 📄 Project Information
+
+**Mata Kuliah:** PAW (Pengembangan Aplikasi Web) - Final Project  
+**Kelompok:** Kelompok 4  
+**Project:** AI Event Description Generator
